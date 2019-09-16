@@ -61,6 +61,7 @@ alias i3='XS=i3 startx'											# Start i3
 alias gnome='XS=gnome startx'									# Start Gnome
 alias volume='alsamixer'
 alias upgrade='sudo apt update && sudo apt upgrade'
+alias gitu='git add . && git commit && git push'
 
 # Theming section  
 autoload -U compinit colors zcalc
