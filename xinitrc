@@ -52,7 +52,7 @@ case "$XS" in
 		i3)
 				exec i3
 				;;
-		gnome)
-				exec gnome-session
+		lxde)
+				exec startlxde
 				;;
 esac

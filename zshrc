@@ -58,7 +58,7 @@ alias cp="cp -i"                                                # Confirm before
 alias cldown='sudo rm -r ~/Downloads && mkdir ~/Downloads'
 alias ls='ls --color --group-directories-first --classify'
 alias i3='XS=i3 startx'											# Start i3
-alias gnome='XS=gnome startx'									# Start Gnome
+alias lxde='XS=lxde startx'									
 alias volume='alsamixer'
 alias upgrade='sudo apt update && sudo apt upgrade'
 
