@@ -53,6 +53,6 @@ case "$XS" in
 				exec i3
 				;;
 		lxde)
-				exec startlxde
+				exec startlxde-pi
 				;;
 esac

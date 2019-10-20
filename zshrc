@@ -181,6 +181,7 @@ case $(basename "$(cat "/proc/$PPID/comm")") in
   login)
     	RPROMPT="%{$fg[red]%} %(?..[%?])" 
     	alias x='startx ~/.xinitrc'      # Type name of desired desktop after x, xinitrc is configured for it
+		launch.sh
     ;;
 #  'tmux: server')
 #        RPROMPT='$(git_prompt_string)'
