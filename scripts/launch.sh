@@ -8,8 +8,8 @@ function ctrl_c() {
 	exit 1
 }
 
-dialog --title "Launch.sh" \
-	--backtitle 'Version 0.1' \
+dialog --title "Launch.sh : Pi Edition" \
+	--backtitle 'Version 0.2' \
 	--cancel-label 'Exit' \
 	--msgbox 'Work in Progress, Proceed at your own risk' 7 25
 
