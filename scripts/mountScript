@@ -1,0 +1,37 @@
+#!/bin/zsh
+
+clear
+mounttype=( '1. physical' '2. network' '3. umount' )
+
+sudo fdisk -l | grep --color=auto /dev/
+
+echo "-------------"
+for element in "${mounttype[@]}"
+do
+	echo ": $element"
+done
+echo "-------------"
+
+read mtype\?"Type: "
+
+case $mtype in
+	1)
+		read id\?'Device ID: '
+		read mount\?'Mount Point: '
+		sudo mount $id $mount
+		;;
+	2)
+		read ip\?'ip: '
+		read folder\?'folder: '
+		read username\?'username: '
+		read -sq password\?'password: '
+		sudo mount -t cifs \\\\$ip\\$folder /mnt/network -o username=$username,password=$password,uid=1000,gid=999
+		;;
+	3)
+		read dev\?'Unmount What: '
+		sudo umount $dev
+		;;
+	*)
+		echo Input Error
+		;;
+esac
